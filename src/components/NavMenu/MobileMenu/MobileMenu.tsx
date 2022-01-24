@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 function MobileMenu(props) {
   const location = useLocation();
 
-  return <>Ki pain re</>;
+  return <>Mobile menu coming soon...</>;
 }
 
 export default MobileMenu;
