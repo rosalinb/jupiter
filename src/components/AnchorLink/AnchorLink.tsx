@@ -4,8 +4,8 @@ import JupiterColor from "../../utils/Color";
 
 type AnchorProps = {
   to: string;
-  text: string;
   shouldOpenNewPage?: boolean;
+  children: any;
 };
 
 const AnchorLink: React.FunctionComponent<AnchorProps> = (
@@ -18,7 +18,7 @@ const AnchorLink: React.FunctionComponent<AnchorProps> = (
         // target={props.shouldOpenNewPage ? "_blank" : "_self"}
         target={props.shouldOpenNewPage && "_blank"}
       >
-        {props.text}
+        {props.children}
       </StyledAnchorLink>
     </div>
   );
@@ -42,7 +42,7 @@ const StyledAnchorLink = styled.a`
   border: none;
   transition: 200ms; */
 
-  font-size: 40px;
+  /* font-size: 40px; */
   @media screen and (max-width: 768px) {
     font-size: 16px;
   }
