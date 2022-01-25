@@ -15,6 +15,15 @@ import AnchorLink from "../../components/AnchorLink/AnchorLink";
 
 export default function Home() {
   let navigate = useNavigate();
+  const YoutubeLink = () => {
+    return (
+      <AnchorLink
+        to="https://www.facebook.com/"
+        text="Facebook Link"
+      ></AnchorLink>
+    );
+  };
+
   return (
     <div>
       <Styled.HeroContainer>
@@ -68,16 +77,10 @@ export default function Home() {
           </Styled.Box>
         </Styled.BoxContainer>
         <div style={{ marginTop: "50px" }}>
-          {" "}
-          <AnchorLink
-            to="https://www.youtube.com/"
-            text="Youtube Link"
-            shouldOpenNewPage={true}
-          ></AnchorLink>
-          <AnchorLink
-            to="https://www.facebook.com/"
-            text="Facebook Link"
-          ></AnchorLink>
+          <AnchorLink to="https://www.youtube.com/" shouldOpenNewPage={true}>
+            Youtube Link
+          </AnchorLink>
+          <AnchorLink to="https://www.facebook.com/">Facebook Link</AnchorLink>
         </div>
       </main>
       <Styled.Footer>
@@ -88,13 +91,19 @@ export default function Home() {
         <div>
           <Styled.SocialMediaInfo>
             <li>
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
+              <AnchorLink to="https://www.twitter.com/">
+                <FontAwesomeIcon icon={faTwitter} size="1x" />
+              </AnchorLink>
             </li>
             <li>
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
+              <AnchorLink to="https://www.facebook.com/">
+                <FontAwesomeIcon icon={faFacebook} size="1x" />
+              </AnchorLink>
             </li>
             <li>
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
+              <AnchorLink to="https://www.linkedin.com/">
+                <FontAwesomeIcon icon={faLinkedin} size="1x" />
+              </AnchorLink>
             </li>
           </Styled.SocialMediaInfo>
         </div>
