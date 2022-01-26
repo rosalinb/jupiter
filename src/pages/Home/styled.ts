@@ -86,6 +86,7 @@ export const Footer = styled.footer`
 export const FooterCopyInfo = styled.div`
   display: flex;
   gap: 30px;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     justify-content: space-between;

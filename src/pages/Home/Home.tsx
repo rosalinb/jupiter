@@ -12,18 +12,10 @@ import {
 import { useNavigate } from "react-router";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import AnchorLink from "../../components/AnchorLink/AnchorLink";
+import IconButton from "../../components/IconButton/IconButton";
+import Card from "../../components/Card/Card";
 
 export default function Home() {
-  let navigate = useNavigate();
-  const YoutubeLink = () => {
-    return (
-      <AnchorLink
-        to="https://www.facebook.com/"
-        text="Facebook Link"
-      ></AnchorLink>
-    );
-  };
-
   return (
     <div>
       <Styled.HeroContainer>
@@ -52,30 +44,28 @@ export default function Home() {
         </div>
 
         <Styled.BoxContainer>
-          <Styled.Box>
-            <Styled.BoxHeader>Courses we offer</Styled.BoxHeader>
+          <Card header="Courses we offer">
             You can find interview related questions of all Levels (Easy,
             Medium, Hard) from languages like C, C++ , Java along with Frontend
             related technology like HTML, CSS, Java Script and Frameworks like
             React.
-          </Styled.Box>
+          </Card>
 
-          <Styled.Box>
-            <Styled.BoxHeader>MCQ questions with hints </Styled.BoxHeader>
+          <Card header="MCQ questions with hints">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             incidunt esse quaerat sunt tempore maxime amet, quidem maiores odio
             at quos excepturi magni cum obcaecati dicta nesciunt reiciendis,
             magnam hic.
-          </Styled.Box>
+          </Card>
 
-          <Styled.Box>
-            <Styled.BoxHeader>Bookmarks to later visit</Styled.BoxHeader>
+          <Card header="Bookmarks to later visit">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             incidunt esse quaerat sunt tempore maxime amet, quidem maiores odio
             at quos excepturi magni cum obcaecati dicta nesciunt reiciendis,
             magnam hic.
-          </Styled.Box>
+          </Card>
         </Styled.BoxContainer>
+
         <div style={{ marginTop: "50px" }}>
           <AnchorLink to="https://www.youtube.com/" shouldOpenNewPage={true}>
             Youtube Link
@@ -86,24 +76,27 @@ export default function Home() {
       <Styled.Footer>
         <Styled.FooterCopyInfo>
           <h4 style={{ margin: 0 }}>Jupiter</h4>
-          <div>&copy; Jupiter Pvt. Ltd. 2022</div>
+          <div style={{ fontSize: 12 }}>&copy; Jupiter Pvt. Ltd. 2022</div>
         </Styled.FooterCopyInfo>
         <div>
           <Styled.SocialMediaInfo>
             <li>
-              <AnchorLink to="https://www.twitter.com/">
-                <FontAwesomeIcon icon={faTwitter} size="1x" />
-              </AnchorLink>
+              <IconButton
+                to="https://www.twitter.com/"
+                icon={faTwitter}
+              ></IconButton>
             </li>
             <li>
-              <AnchorLink to="https://www.facebook.com/">
-                <FontAwesomeIcon icon={faFacebook} size="1x" />
-              </AnchorLink>
+              <IconButton
+                to="https://www.facebook.com/"
+                icon={faFacebook}
+              ></IconButton>
             </li>
             <li>
-              <AnchorLink to="https://www.linkedin.com/">
-                <FontAwesomeIcon icon={faLinkedin} size="1x" />
-              </AnchorLink>
+              <IconButton
+                to="https://www.linkedin.com/"
+                icon={faLinkedin}
+              ></IconButton>
             </li>
           </Styled.SocialMediaInfo>
         </div>
