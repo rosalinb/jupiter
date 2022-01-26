@@ -27,6 +27,7 @@ const StyledCard = styled.div`
   border-radius: 5px;
   box-shadow: 1px 1px 5px 0px ${JupiterColor.primaryColor};
   transition: 300ms;
+  background-color: white;
 
   :hover {
     transform: scale(1.02);

@@ -25,16 +25,8 @@ export default function Home() {
             <Styled.SectionHeader>
               Learn and enhance your skills for any upcoming interview
             </Styled.SectionHeader>
-            {/* <h4>Beginner or Experienced..Doesn't Matter</h4> */}
           </div>
           <LinkButton text="Get Started" to="/signin"></LinkButton>
-
-          {/* <Button
-            text="Get Started"
-            onClick={() => {
-              navigate("/signin");
-            }}
-          ></Button> */}
         </Styled.SectionContainer>
       </Styled.HeroContainer>
 
