@@ -20,17 +20,17 @@ export default LinkButton;
 
 const StyledLink = styled(RouterLink)`
   font-size: 20px;
-  padding: 0.8em 1.5em;
+  padding: 0.7em 1.8em;
   text-align: center;
   cursor: pointer;
   border-radius: 7px;
   background-color: ${JupiterColor.primaryColor};
-  color: white;
+  color: ${JupiterColor.buttonText};
   font-weight: bold;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   outline: none;
   border: none;
-  transition: 200ms;
+  transition: 300ms;
   text-decoration: none;
 
   @media screen and (max-width: 768px) {
@@ -38,6 +38,10 @@ const StyledLink = styled(RouterLink)`
   }
 
   &:hover {
-    background-color: rgb(142 217 191);
+    background-color: ${JupiterColor.primaryHoverColor};
+
+    /* border: ${JupiterColor.buttonText};
+    background-color: white;
+    color: ${JupiterColor.buttonText}; */
   }
 `;

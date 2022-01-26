@@ -12,16 +12,11 @@ type MenuProps = {
 
 export const NAV = styled.nav<NavProps>`
   height: 70px;
-
   left: 0;
   right: 0;
-
   display: flex;
-
   flex-wrap: wrap;
-
   align-items: center;
-
   justify-content: space-between;
 `;
 
@@ -67,10 +62,10 @@ export const LI = styled.li`
 export const Link = styled(RouterLink)<MenuProps>`
   font-size: 15px;
   padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.7rem;
   margin-left: 50px;
   letter-spacing: 1px;
-  color: #000;
+  color: ${Color.primaryText};
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -79,9 +74,24 @@ export const Link = styled(RouterLink)<MenuProps>`
   font-family: "Work Sans", Arial, sans-serif;
   transition: 150ms;
 
-  ${(props) => props.active && `color: ${Color.primaryColor};`}
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* ${(props) => props.active && `color: ${Color.primaryColor};`} */
 
   &:hover {
     color: ${Color.primaryColor};
+  }
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    ${(props) => props.active && `height: 3px;`}
+
+    width: 20px;
+    background-color: ${Color.primaryColor};
   }
 `;
