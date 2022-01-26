@@ -35,15 +35,7 @@ function DesktopMenu(props) {
                     to="/signin"
                     active={location.pathname === "/signin"}
                   >
-                    Login
-                  </Styled.Link>
-                </Styled.LI>
-                <Styled.LI>
-                  <Styled.Link
-                    to="/signup"
-                    active={location.pathname === "/signup"}
-                  >
-                    Get Started
+                    Signin
                   </Styled.Link>
                 </Styled.LI>
               </Styled.UL>

@@ -29,23 +29,6 @@ export default AnchorLink;
 const StyledAnchorLink = styled.a`
   color: ${JupiterColor.primaryColor};
   text-decoration: none;
-  /* font-size: 20px;
-  padding: 0.8em 1.5em;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 7px;
-  background-color: ${JupiterColor.primaryColor};
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-  outline: none;
-  border: none;
-  transition: 200ms; */
-
-  /* font-size: 40px; */
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
 
   &:hover {
     text-decoration: underline;
