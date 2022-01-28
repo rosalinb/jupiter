@@ -2,32 +2,53 @@ import styled from "styled-components";
 import JupiterColor from "../../utils/Color";
 
 export const HeroContainer = styled.div`
-  position: relative;
   color: white;
-`;
-
-export const HeroImage = styled.img`
-  width: 100%;
   height: 60vh;
-  object-fit: cover;
-`;
-
-export const SectionContainer = styled.section`
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10vw;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     left: 40%;
   }
 `;
 
-export const SectionHeader = styled.h1`
-  font-size: 45px;
-
+export const HeroHeader = styled.h1`
+  font-size: 70px;
+  color: #61468b;
+  text-align: center;
+  margin: 50px 50px;
   @media screen and (max-width: 768px) {
     font-size: 25px;
+  }
+`;
+
+export const HeroImage = styled.img`
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+`;
+
+export const MainContainer = styled.article`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  /* gap: 5vw; */
+  /* text-align: justify; */
+
+  /* width: auto; */
+  /* height: auto; */
+  /* padding: 20px; */
+  background-color: #eeede7;
+  :hover {
+    background-color: #e2ded0;
+    transition: 200ms;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -41,18 +62,29 @@ export const BoxTitle = styled.h3`
 
 export const BoxContainer = styled.div`
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
-  gap: 5vw;
+  /* gap: 5vw; */
   text-align: justify;
+  padding: 20px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
-export const BoxHeader = styled.h4`
+export const ContainerHeader = styled.h4`
   margin-top: 0;
+  padding-bottom: 10px;
+  width: fit-content;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  :hover {
+    border-bottom: 2px solid white;
+    transition: 200ms;
+    color: white;
+  }
 `;
 
 export const Box = styled.div`
@@ -104,3 +136,36 @@ export const SocialMediaInfo = styled.ul`
     justify-content: space-between;
   }
 `;
+
+// *styles are defined for section on image
+
+// export const HeroContainer = styled.div`
+//   position: relative;
+//   color: white;
+//   height: 60vh;
+// `;
+
+// export const HeroImage = styled.img`
+//   width: 100%;
+//   height: 60vh;
+//   object-fit: cover;
+// `;
+
+// export const SectionContainer = styled.section`
+//   position: absolute;
+//   left: 20%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+
+//   @media screen and (max-width: 768px) {
+//     left: 40%;
+//   }
+// `;
+
+// export const SectionHeader = styled.h1`
+//   font-size: 45px;
+
+//   @media screen and (max-width: 768px) {
+//     font-size: 25px;
+//   }
+// `;
