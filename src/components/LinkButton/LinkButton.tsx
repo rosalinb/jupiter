@@ -20,7 +20,7 @@ export default LinkButton;
 
 const StyledLink = styled(RouterLink)`
   font-size: 25px;
-  padding: 2em 2em;
+  padding: 2em;
   text-align: center;
   cursor: pointer;
   border-radius: 15px 50px 30px;
