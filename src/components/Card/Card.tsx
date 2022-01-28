@@ -18,7 +18,7 @@ const Card: React.FunctionComponent<CardProps> = (props: CardProps) => {
 
 export default Card;
 
-const BoxHeader = styled.h4`
+const BoxHeader = styled.div`
   margin-top: 0;
 `;
 

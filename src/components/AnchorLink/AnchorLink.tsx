@@ -26,6 +26,15 @@ const AnchorLink: React.FunctionComponent<AnchorProps> = (
 
 export default AnchorLink;
 
+{
+  /* <div style={{ marginTop: "50px" }}>
+<AnchorLink to="https://www.youtube.com/" shouldOpenNewPage={true}>
+  Youtube Link
+</AnchorLink>
+<AnchorLink to="https://www.facebook.com/">Facebook Link</AnchorLink>
+</div> */
+}
+
 const StyledAnchorLink = styled.a`
   color: ${JupiterColor.primaryColor};
   text-decoration: none;

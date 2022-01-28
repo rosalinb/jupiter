@@ -13,12 +13,21 @@ import { useNavigate } from "react-router";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import AnchorLink from "../../components/AnchorLink/AnchorLink";
 import IconButton from "../../components/IconButton/IconButton";
-import Card from "../../components/Card/Card";
+import ArticleContainer from "../../components/ArticleContainer/ArticleContainer";
 
 export default function Home() {
   return (
     <div>
       <Styled.HeroContainer>
+        <Styled.HeroHeader>
+          Learn and enhance your skills for any upcoming interview
+        </Styled.HeroHeader>
+        <LinkButton text="Get Started" to="/signin"></LinkButton>
+      </Styled.HeroContainer>
+      <div>
+        <Styled.HeroImage src={heroImage}></Styled.HeroImage>
+      </div>
+      {/* <Styled.HeroContainer>
         <Styled.HeroImage src={heroImage}></Styled.HeroImage>
         <Styled.SectionContainer>
           <div style={{ maxWidth: 500 }}>
@@ -28,43 +37,46 @@ export default function Home() {
           </div>
           <LinkButton text="Get Started" to="/signin"></LinkButton>
         </Styled.SectionContainer>
-      </Styled.HeroContainer>
+      </Styled.HeroContainer> */}
 
-      <main style={{ width: "80%", margin: "auto" }}>
-        <div>
-          <Styled.BoxTitle>Featuring</Styled.BoxTitle>
-        </div>
-
-        <Styled.BoxContainer>
-          <Card header="Courses we offer">
+      <Styled.MainContainer>
+        <ArticleContainer
+          header="Hand-picked Questions"
+          subHeader="Carefully picked by experts"
+        >
+          <p>
             You can find interview related questions of all Levels (Easy,
             Medium, Hard) from languages like C, C++ , Java along with Frontend
             related technology like HTML, CSS, Java Script and Frameworks like
             React.
-          </Card>
+          </p>
+        </ArticleContainer>
 
-          <Card header="MCQ questions with hints">
+        <ArticleContainer
+          header="Multiple Levels"
+          subHeader="Based on difficulty level"
+        >
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             incidunt esse quaerat sunt tempore maxime amet, quidem maiores odio
             at quos excepturi magni cum obcaecati dicta nesciunt reiciendis,
             magnam hic.
-          </Card>
+          </p>
+        </ArticleContainer>
 
-          <Card header="Bookmarks to later visit">
+        <ArticleContainer
+          header="Two Test Modes"
+          subHeader="Choose what suits you best"
+        >
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             incidunt esse quaerat sunt tempore maxime amet, quidem maiores odio
             at quos excepturi magni cum obcaecati dicta nesciunt reiciendis,
             magnam hic.
-          </Card>
-        </Styled.BoxContainer>
+          </p>
+        </ArticleContainer>
+      </Styled.MainContainer>
 
-        <div style={{ marginTop: "50px" }}>
-          <AnchorLink to="https://www.youtube.com/" shouldOpenNewPage={true}>
-            Youtube Link
-          </AnchorLink>
-          <AnchorLink to="https://www.facebook.com/">Facebook Link</AnchorLink>
-        </div>
-      </main>
       <Styled.Footer>
         <Styled.FooterCopyInfo>
           <h4 style={{ margin: 0 }}>Jupiter</h4>

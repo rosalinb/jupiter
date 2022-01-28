@@ -19,11 +19,11 @@ const LinkButton: React.FunctionComponent<LinkProps> = (props: LinkProps) => {
 export default LinkButton;
 
 const StyledLink = styled(RouterLink)`
-  font-size: 20px;
-  padding: 0.7em 1.8em;
+  font-size: 25px;
+  padding: 2em 2em;
   text-align: center;
   cursor: pointer;
-  border-radius: 7px;
+  border-radius: 15px 50px 30px;
   background-color: ${JupiterColor.primaryColor};
   color: ${JupiterColor.buttonText};
   font-weight: bold;
