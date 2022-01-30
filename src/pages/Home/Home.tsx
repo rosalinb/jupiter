@@ -20,11 +20,11 @@ export default function Home() {
     <div>
       <Styled.HeroContainer>
         <Styled.HeroHeader>
-          Learn and enhance your skills for any upcoming interview
+          Enhance your frontend interview skills
         </Styled.HeroHeader>
         <LinkButton text="Get Started" to="/signin"></LinkButton>
       </Styled.HeroContainer>
-      <div>
+      <div style={{ margin: "auto", width: "100%" }}>
         <Styled.HeroImage src={heroImage}></Styled.HeroImage>
       </div>
       {/* <Styled.HeroContainer>

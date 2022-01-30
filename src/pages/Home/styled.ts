@@ -3,11 +3,11 @@ import JupiterColor from "../../utils/Color";
 
 export const HeroContainer = styled.div`
   color: white;
-  height: 60vh;
+  height: 55vh;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  gap: 10vw;
+  gap: 5vw;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -16,12 +16,15 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroHeader = styled.h1`
-  font-size: 70px;
+  font-size: 65px;
   color: #61468b;
   text-align: center;
-  margin: 50px 50px;
+  margin: 120px 50px 0px;
+  width: 50vw;
+
   @media screen and (max-width: 768px) {
     font-size: 25px;
+    width: 90vw;
   }
 `;
 
