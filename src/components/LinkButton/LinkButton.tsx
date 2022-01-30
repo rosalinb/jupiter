@@ -6,32 +6,41 @@ import JupiterColor from "../../utils/Color";
 type LinkProps = {
   text: string;
   to: string;
+  padding?: string; // 5px
 };
 
 const LinkButton: React.FunctionComponent<LinkProps> = (props: LinkProps) => {
+  const { text, to, padding } = props;
+
   return (
-    <div>
-      <StyledLink to={props.to}>{props.text}</StyledLink>
-    </div>
+    <StyledLink to={to} padding={padding}>
+      {text}
+    </StyledLink>
   );
 };
 
 export default LinkButton;
 
-const StyledLink = styled(RouterLink)`
+type StyledLinkProps = {
+  padding?: string; // 5px
+};
+
+const StyledLink = styled(RouterLink)<StyledLinkProps>`
   font-size: 25px;
-  padding: 2em;
+  padding: ${(props) => props.padding || "2rem"};
   text-align: center;
   cursor: pointer;
   border-radius: 15px 50px 30px;
   background-color: ${JupiterColor.primaryColor};
   color: ${JupiterColor.buttonText};
+
   font-weight: bold;
   /* letter-spacing: 1px; */
   outline: none;
   border: none;
   transition: 300ms;
   text-decoration: none;
+  display: inline-block;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;

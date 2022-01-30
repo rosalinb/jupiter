@@ -5,7 +5,7 @@ import JupiterColor from "../../utils/Color";
 type ButtonProps = {
   text: string;
   color?: string; // ? makes it optional
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 const Button: React.FunctionComponent<ButtonProps> = (props: ButtonProps) => {
