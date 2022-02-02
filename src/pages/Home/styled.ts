@@ -3,7 +3,7 @@ import JupiterColor from "../../utils/Color";
 
 export const HeroContainer = styled.div`
   color: white;
-  height: 55vh;
+  padding-bottom: 30px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;

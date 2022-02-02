@@ -10,30 +10,30 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Courses() {
-  const courses = [
-    {
-      courseName: "HTML",
-      courseDescription: " Master Frontend by mastering the Courses",
-      linkName: "HTML",
-    },
-    {
-      courseName: "CSS",
-      courseDescription: " Master Frontend by mastering the Courses",
-      linkName: "CSS",
-    },
-    {
-      courseName: "JavaScript",
-      courseDescription: " Master Frontend by mastering the Courses",
-      linkName: "JavaScript",
-    },
-    {
-      courseName: "React",
-      courseDescription: " Master Frontend by mastering the Courses",
-      linkName: "React",
-    },
-  ];
+const courses = [
+  {
+    courseName: "HTML",
+    courseDescription: " Master Frontend by mastering the Courses",
+    linkName: "HTML",
+  },
+  {
+    courseName: "CSS",
+    courseDescription: " Master Frontend by mastering the Courses",
+    linkName: "CSS",
+  },
+  {
+    courseName: "JavaScript",
+    courseDescription: " Master Frontend by mastering the Courses",
+    linkName: "JavaScript",
+  },
+  {
+    courseName: "React",
+    courseDescription: " Master Frontend by mastering the Courses",
+    linkName: "React",
+  },
+];
 
+function Courses() {
   return (
     <>
       <Styled.CourseHeroContainer>
@@ -43,11 +43,12 @@ function Courses() {
         <Styled.CourseHeroSubHeader>
           Choose from different levels
         </Styled.CourseHeroSubHeader>
+
         <Styled.HeroIconsContainer>
-          <Styled.HeroIcons icon={faHtml5} size="3x"></Styled.HeroIcons>
-          <Styled.HeroIcons icon={faCss3} size="3x"></Styled.HeroIcons>
-          <Styled.HeroIcons icon={faJs} size="3x"></Styled.HeroIcons>
-          <Styled.HeroIcons icon={faReact} size="3x"></Styled.HeroIcons>
+          <Styled.HeroIcon icon={faHtml5}></Styled.HeroIcon>
+          <Styled.HeroIcon icon={faCss3}></Styled.HeroIcon>
+          <Styled.HeroIcon icon={faJs}></Styled.HeroIcon>
+          <Styled.HeroIcon icon={faReact}></Styled.HeroIcon>
         </Styled.HeroIconsContainer>
       </Styled.CourseHeroContainer>
 

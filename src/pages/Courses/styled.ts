@@ -45,7 +45,7 @@ export const HeroIconsContainer = styled.div`
   margin-top: 50px;
 `;
 
-export const HeroIcons = styled(FontAwesomeIcon)`
+export const HeroIcon = styled(FontAwesomeIcon).attrs({ size: "3x" })`
   :hover {
     color: black;
     transition: 200ms;
