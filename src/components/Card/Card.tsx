@@ -11,6 +11,7 @@ type CardProps = {
   icon?: IconDefinition;
   iconSize?: SizeProp;
   width?: string;
+  backgroungColor?: string;
 };
 
 const Card: React.FunctionComponent<CardProps> = (props: CardProps) => {

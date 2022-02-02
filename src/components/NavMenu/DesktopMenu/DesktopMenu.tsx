@@ -32,8 +32,8 @@ function DesktopMenu(props) {
                 </Styled.LI>
                 <Styled.LI>
                   <Styled.Link
-                    to="/signin"
-                    active={location.pathname === "/signin"}
+                    to={RouteConfig.signin}
+                    active={location.pathname === RouteConfig.signin}
                   >
                     Signin
                   </Styled.Link>
